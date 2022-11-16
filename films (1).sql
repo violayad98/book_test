@@ -63,7 +63,7 @@ DROP TABLE IF EXISTS `films_actors`;
 CREATE TABLE IF NOT EXISTS `films_actors` (
   `film_id` int(11) NOT NULL,
   `actor_id` int(11) NOT NULL,
-  UNIQUE KEY `film_id` (`film_id`,`actor_id`)
+  UNIQUE KEY `film_actor` (`film_id`,`actor_id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
